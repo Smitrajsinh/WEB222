@@ -1,0 +1,110 @@
+<!-- I declare that my Final assessment assignment is wholly my own work in accordance with Seneca Academic Policy. No part of this assignment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructor and / or made available in this assignment for my use.
+I also declare that no part of this assignment has been distributed to other students.
+Name: Smitraj Vaghela
+Dated: April 18 2022 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="product.js"></script>
+    <title>Smitraj Vaghela</title>
+</head>
+
+
+<body>
+    <header>
+        <h2 id="center">WEB 222 - Final Assessment by Smitraj Vaghela</h2>
+    </header>
+    <div id="main">
+        <nav>
+            <div id="nav-contain">
+                <ul>
+                    <li><a href="honesty.html">Home</a></li>
+                    <li><a class="active" href="product.html">Product</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="product">
+            <div id="body">
+                <form action="https://httpbin.org/post" method="post" class="contactUs" name="signup"
+                    onsubmit="return validateForm();">
+                    <div class="contact">
+                        <fieldset>
+                            <legend>Supplier/User Sign Up Form</legend>
+
+                            <label for="ProductID">
+                                Product ID:
+                            </label>
+                            <input placeholder="8-digit number" id="ProductID" name="ProductID" type="text"
+                                pattern="^\d{8}$" required="required"><br><br>
+
+                            <label for="ProductDescription">
+                                Product Description:
+                            </label>
+                            <textarea placeholder="description - Min 20 chars" id="ProductDescription"
+                                name="ProductDescription" minlength="20" required="required"></textarea><br><br>
+
+                            <label for="Price">
+                                Price:
+                            </label>
+                            <input placeholder="price(less than 1000)" id="Price" name="Price" type="text"
+                                pattern="^[1-9]$|^[1-9][0-9]$|^[1-9][0-9][0-9]$" required="required"><br><br>
+
+                            <label for="SupplierUsername">
+                                Supplier Username:
+                            </label>
+                            <input placeholder="name of supplier (atleast 6 char)" id="SupplierUsername"
+                                name="SupplierUsername" minlength="6" pattern="/^[a-zA-Z]/" type="text"
+                                required="required"><br><br>
+
+                            <label>Supplier Status:</label>
+                            <div class="options">
+                                <label for="SupplierStatus1">New Supplier</label>
+                                <input id="SupplierStatus1" type="checkbox" name="SupplierStatus" value="NewSupplier"><br>
+                                <label for="SupplierStatus2">Contract Signed</label>
+                                <input id="SupplierStatus2" type="checkbox" name="SupplierStatus"
+                                    value="ContractSigned"><br>
+                                <label for="SupplierStatus3">Quality Tested</label>
+                                <input id="SupplierStatus3" type="checkbox" name="SupplierStatus"
+                                    value=" QualityTested"><br><br>
+                            </div>
+
+                            <label for="SupplierEmail">
+                                Supplier Email:
+                            </label>
+                            <input placeholder="enter email" id="SupplierEmail" type="email"
+                                required="required"><br><br>
+
+                            <!--hidden-->
+                            <input type="hidden" name="lastName" id="lastName" value="VAGHELA" />
+                            <input type="hidden" name="studentId" id="studentId" value="112905211" />
+                            <div class="button">
+                                <input type="submit" value="Submit">
+                                <input type="reset" onclick="clearerrorpanel()" value="Reset">
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+                <div id="error" style="border:double">
+                    <p>Errors (if any):</p>
+                    <p id="errorpanel"></p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <footer><a href="https://github.com/Smitrajsinh/WEB222">Github Project link</a>
+        <P> © WEB222 Final Assessment - Smitraj Vaghela</P>
+    </footer>
+</body>
+
+</html>

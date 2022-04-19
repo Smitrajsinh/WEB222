@@ -1,0 +1,142 @@
+#body, html
+{
+    background-color: #EEB34B;
+    margin: 0;
+    padding: 0;
+}
+
+#body{
+    background-color: #f1f1f1;
+    justify-content: center;
+    margin: 20px;
+    margin-left: 53px;
+    max-width: 100%;
+    width: 90%;
+    height:auto;
+    border-radius: 20px;
+    padding: 20px;
+    min-height: 55vh;
+    font-size: 18px;
+    line-height: 1.5;
+}
+  
+
+#footer 
+{
+    background-color: #945cad;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    color: #85f0cc;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#center
+{
+    text-align: center;
+}
+
+#header
+{
+    background-color: #CBF83E;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: 20px;
+    display: block;
+    grid-template-columns: 1fr 2fr;
+}
+
+#header h2 {
+    color: #E12836;  
+    text-align: center;
+    margin: 10px auto; 
+}
+
+#main{
+    display:flex;
+    flex-direction: column;
+}
+
+#nav 
+{
+    width: 100%;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 20px;
+    height: 100%;
+    width: 100%; 
+    overflow: auto; 
+  }
+
+#nav-contain{
+    background-color: #ccc;
+    margin: 20px;
+    border-radius: 20px;
+    height: 80px;
+}
+
+#acadamicpolicy 
+{
+    max-width: 100%;
+    width:100%;
+    height:auto;
+}
+
+#fieldset
+{
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+}
+
+#li a {
+    display:block;
+    padding: 8px 16px;
+    text-decoration:none;
+    color: black;
+}
+  
+#li a.active {
+    background-color: #1A1A1A;
+    color: white;
+}
+  
+#li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#body-main h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+#legend
+{
+font-size: 60px;
+}
+
+.product
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#error
+{
+    background-color: #f1f1f1;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    height: auto;
+    width: 30%;
+    max-width:30%
+}
